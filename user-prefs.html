@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onUserPrepsInit(event.target)">
+
+    <header class="header-container flex justify-center">
+        <nav class="main-nav">
+            <ul class="nav-list clean-list flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user-prefs.html">Settings</a></li>
+                <li><a href="map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-container flex justify-center">
+        <form action="" class="user-preps flex column" onsubmit="onUpdateUserPreps(event)">
+
+            <ul class="clean-list">
+                <li class="form-item flex space-between">
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name">
+                </li>
+
+                <li class="form-item flex space-between">
+                    <label for="bgColor">Background Color:</label>
+                    <input type="color" name="" id="bgColor" class="pointer">
+                </li>
+
+                <li class="form-item flex space-between">
+                    <label for="txtColor">Text Color:</label>
+                    <input type="color" name="" id="txtColor" class="pointer">
+                </li>
+
+                <li class="form-item flex space-between">
+                    <label for="zoomFactor">Zoom Factor:</label>
+                    <input type="range" id="zoomFactor" min="1" max="21" class="pointer">
+                </li>
+
+                <li class="form-item flex space-between">
+                    <label for="mapStartLocation">Map Start Location:</label>
+                    <input type="text" id="mapStartLocation">
+                </li>
+            </ul>
+
+            <button>Save</button>
+
+        </form>
+    </section>
+
+    <script src="js/services/storage.services.js"></script>
+    <script src="js/services/user.services.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>

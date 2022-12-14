@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+h1 {
+    margin-bottom: 200px;
+}
+
+.main-nav .nav-list a {
+    font-size: 2em;
+    text-decoration: none;
+    color: inherit;
+    padding: 30px 30px;
+    background-color: rgb(129, 136, 150);
+    border: 1px solid lightgray;
+}
+
+.main-nav .nav-list a:hover {
+    box-shadow: inset 0px -11px 0px 0px;
+}
+
+.nav-list {
+    max-width: 500px;
+
+}
+
+.header-container {
+    padding-top: 30px;
+    width: 100%;
+    height: 96.5px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(73, 72, 71);
+}
+
+.form-container {
+    margin-top: 100px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+}
+
+.user-preps {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.user-preps input {
+    width: 40%;
+}
+
+.user-preps button {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: rgb(0, 106, 255);
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0.2em;
+}
+
+.user-preps button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 106, 255, 0.773);
+}
+
+.form-item {
+    padding: 5px;
+}
+
+.map-area{
+    height: 90vh;
+    padding: 20px;
+}
+.map{
+    flex-basis: 70%;
+    height: 100%;
+}
+
+.locations-list{
+    flex-basis: 30%;
+    height: 100%;
+    background-color: antiquewhite;
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+}
+
+.list-header{
+   
+    background-color: rgb(127, 255, 255);
+    box-shadow: inset 0 10px 0 0 rgb(125, 183, 219);
+    border-radius: 0.5em;
+    margin-bottom: 15px;
+}
+
+.list-btn{
+    position: fixed;
+    right: 40px;
+    margin-top: 5px;
+}
+.location-container li div{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: cornsilk;
+    border-radius: 0.5em;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.my-location{
+    position: fixed;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+}
+
+
+
+
+
+
+/* HELPERS */
+
+/* flex helpers */
+
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.justify-center {
+    justify-content: center;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+/* list helpers */
+
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}

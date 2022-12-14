@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onMapInit(event.target)">
+
+    <header class="header-container flex justify-center">
+        <nav class="main-nav">
+            <ul class="nav-list clean-list flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user-prefs.html">Settings</a></li>
+                <li><a href="map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="map-area flex">
+        <img class="my-location" src="img/my-location.png" onclick="onMyLocationClick()">
+        <p id="locationError"></p>
+
+        <div class="map">
+            
+        </div>
+
+        <div class="locations-list flex column" >
+            <header class="list-header flex column justify-center align-center">
+                <h2>Saved Locations</h2>
+            </header>
+                <ul class="location-container clean-list flex column"></ul>
+        </div>
+
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs25ULg84X5AAwQgzvEWyf9Caf-68w7Mk"></script>
+    <script src="js/services/util.services.js"></script>
+    <script src="js/services/storage.services.js"></script>
+    <script src="js/services/user.services.js"></script>
+    <script src="js/services/place.services.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
